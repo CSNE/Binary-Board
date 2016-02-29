@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0">
+
+
+    <RelativeLayout
+        android:id="@+id/container_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/container_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="false"
+            android:layout_alignBottom="@+id/container_buttons">
+
+            <TextView
+                android:id="@+id/preview_codepoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="U+0000"
+                android:layout_centerHorizontal="true"
+                android:textSize="16dp"
+                android:textColor="#000000" />
+
+            <Button
+                style="@style/other_button"
+                android:id="@+id/preview_char"
+                android:layout_width="96dp"
+                android:layout_height="fill_parent"
+                android:text="가"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:textSize="56dp"
+                android:padding="8dp"
+                android:layout_below="@+id/preview_codepoint" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/container_left">
+
+            <LinearLayout
+                android:id="@+id/keys"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/binary_container">
+
+                <LinearLayout
+                    android:id="@+id/top_row"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/container_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/value_1"
+                            style="@style/input_value"
+
+
+                            android:text="1" />
+
+                        <Button
+                            android:id="@+id/btn_1"
+                            style="@style/input_button"
+
+
+                            android:text="\?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/container_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/value_2"
+                            style="@style/input_value"
+
+
+                            android:text="2" />
+
+                        <Button
+                            android:id="@+id/btn_2"
+                            style="@style/input_button"
+
+
+                            android:text="\?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/container_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/value_4"
+                            style="@style/input_value"
+
+
+                            android:text="4" />
+
+                        <Button
+                            android:id="@+id/btn_4"
+                            style="@style/input_button"
+
+
+                            android:text="\?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/container_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/value_8"
+                            style="@style/input_value"
+
+
+                            android:text="8" />
+
+                        <Button
+                            android:id="@+id/btn_8"
+                            style="@style/input_button"
+
+
+                            android:text="\?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/container_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/value_16"
+                            style="@style/input_value"
+
+
+                            android:text="16" />
+
+                        <Button
+                            android:id="@+id/btn_16"
+                            style="@style/input_button"
+
+
+                            android:text="\?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/container_32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/value_32"
+                            style="@style/input_value"
+
+
+                            android:text="32" />
+
+                        <Button
+                            android:id="@+id/btn_32"
+                            style="@style/input_button"
+
+
+                            android:text="\?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/container_64"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/value_64"
+                            style="@style/input_value"
+
+
+                            android:text="64" />
+
+                        <Button
+                            android:id="@+id/btn_64"
+                            style="@style/input_button"
+
+
+                            android:text="\?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/container_128"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/value_128"
+                            style="@style/input_value"
+
+
+                            android:text="128" />
+
+                        <Button
+                            android:id="@+id/btn_128"
+                            style="@style/input_button"
+
+
+                            android:text="\?" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottom_row"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/container_256"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/value_256"
+                            style="@style/input_value"
+
+
+                            android:text="256" />
+
+                        <Button
+                            android:id="@+id/btn_256"
+                            style="@style/input_button"
+
+
+                            android:text="\?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/container_512"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/value_512"
+                            style="@style/input_value"
+
+
+                            android:text="512" />
+
+                        <Button
+                            android:id="@+id/btn_512"
+                            style="@style/input_button"
+
+
+                            android:text="\?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/container_1024"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/value_1024"
+                            style="@style/input_value"
+
+
+                            android:text="1024" />
+
+                        <Button
+                            android:id="@+id/btn_1024"
+                            style="@style/input_button"
+
+
+                            android:text="\?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/container_2048"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/value_2048"
+                            style="@style/input_value"
+
+
+                            android:text="2048" />
+
+                        <Button
+                            android:id="@+id/btn_2048"
+                            style="@style/input_button"
+
+
+                            android:text="\?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/container_4096"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/value_4096"
+                            style="@style/input_value"
+
+
+                            android:text="4096" />
+
+                        <Button
+                            android:id="@+id/btn_4096"
+                            style="@style/input_button"
+
+
+                            android:text="\?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/container_8192"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/value_8192"
+                            style="@style/input_value"
+
+
+                            android:text="8192" />
+
+                        <Button
+                            android:id="@+id/btn_8192"
+                            style="@style/input_button"
+
+
+                            android:text="\?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/container_16384"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/value_16384"
+                            style="@style/input_value"
+
+
+                            android:text="16384" />
+
+                        <Button
+                            android:id="@+id/btn_16384"
+                            style="@style/input_button"
+
+
+                            android:text="\?" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/container_32768"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/value_32768"
+                            style="@style/input_value"
+
+
+                            android:text="32768" />
+
+                        <Button
+                            android:id="@+id/btn_32768"
+                            style="@style/input_button"
+
+
+                            android:text="\?" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/binary_container"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+
+                <TextView
+                    style="@style/binary_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/binary_1"
+                    android:layout_weight="1" />
+                <TextView
+                    style="@style/binary_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/binary_2"
+                    android:layout_weight="1" />
+                <TextView
+                    style="@style/binary_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/binary_4"
+                    android:layout_weight="1" />
+                <TextView
+                    style="@style/binary_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/binary_8"
+                    android:layout_weight="1" />
+                <TextView
+                    style="@style/binary_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/binary_16"
+                    android:layout_weight="1" />
+                <TextView
+                    style="@style/binary_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/binary_32"
+                    android:layout_weight="1" />
+                <TextView
+                    style="@style/binary_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/binary_64"
+                    android:layout_weight="1" />
+                <TextView
+                    style="@style/binary_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/binary_128"
+                    android:layout_weight="1" />
+                <TextView
+                    style="@style/binary_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/binary_256"
+                    android:layout_weight="1" />
+                <TextView
+                    style="@style/binary_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/binary_512"
+                    android:layout_weight="1" />
+                <TextView
+                    style="@style/binary_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/binary_1024"
+                    android:layout_weight="1" />
+                <TextView
+                    style="@style/binary_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/binary_2048"
+                    android:layout_weight="1" />
+                <TextView
+                    style="@style/binary_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/binary_4096"
+                    android:layout_weight="1" />
+                <TextView
+                    style="@style/binary_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/binary_8192"
+                    android:layout_weight="1" />
+                <TextView
+                    style="@style/binary_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/binary_16384"
+                    android:layout_weight="1" />
+                <TextView
+                    style="@style/binary_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/binary_32768"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/container_top"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/other_button"
+            android:id="@+id/key_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="DELETE"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Binary Board\n(Unicode BMP)"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/key_del"
+            android:layout_toLeftOf="@+id/key_end"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="false"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"
+            android:textColor="#60000000" />
+
+        <Button
+            style="@style/other_button"
+            android:id="@+id/key_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="ENTER"
+            android:padding="8dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
