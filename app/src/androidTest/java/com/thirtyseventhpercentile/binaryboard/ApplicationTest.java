@@ -1,4 +1,4 @@
-package com.chancorp.binaryboard;
+package com.thirtyseventhpercentile.binaryboard;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

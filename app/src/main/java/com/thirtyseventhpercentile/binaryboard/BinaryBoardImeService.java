@@ -1,4 +1,4 @@
-package com.chancorp.binaryboard;
+package com.thirtyseventhpercentile.binaryboard;
 
 import android.inputmethodservice.InputMethodService;
 import android.os.Handler;

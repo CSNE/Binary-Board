@@ -1,0 +1,27 @@
+Adobe After Effects v11.0 (Windows 64) render log for project ¡°PPAEK.aep¡±
+
+Rendering started on 3/29/2016 at 7:52:08 PM
+
+
+  3/29/2016 7:52:08 PM: Starting composition ¡°Feature Graphic¡±.
+
+
+  Output To: C:\Users\Chan\Desktop\Feature Graphic_[#####].png
+  
+  3/29/2016 7:52:09 PM: Finished composition ¡°Feature Graphic¡±.
+
+
+
+  3/29/2016 7:52:09 PM: Starting composition ¡°Logo Main¡±.
+
+
+  Output To: C:\Users\Chan\Desktop\Logo Main_[#####].png
+  
+  3/29/2016 7:52:10 PM: Finished composition ¡°Logo Main¡±.
+
+
+
+  Total Time Elapsed: 2 Seconds
+
+Log closed on 3/29/2016 at 7:52:10 PM
+
