@@ -1,4 +1,4 @@
-package com.thirtyseventhpercentile.binaryboard;
+package com.cosmicsubspace.binaryboard;
 
 import android.inputmethodservice.InputMethodService;
 import android.os.Handler;
@@ -9,6 +9,7 @@ import android.view.inputmethod.InputConnection;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.cosmicsubspace.binaryboard.R;
 
 public class BinaryBoardImeService extends InputMethodService implements View.OnClickListener, View.OnTouchListener {
 

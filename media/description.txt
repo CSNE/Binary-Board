@@ -1,0 +1,4 @@
+﻿This keyboard lets users to input any character in the Unicode range 0x0000~0xFFFF, by manually specifying which of the 16 bits are active.
+By pressing the bit buttons on the left, you can flip the individual bits, to get the bit sequence you want that corresponds to a character. The character is input when you press the button on the right.
+
+Useless, yes. ...but fun!

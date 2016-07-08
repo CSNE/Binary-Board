@@ -1,4 +1,4 @@
-package com.thirtyseventhpercentile.binaryboard;
+package com.cosmicsubspace.binaryboard;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
